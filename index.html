@@ -7,6 +7,8 @@
     <title>nursing management</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -15,23 +17,33 @@
     <div class="bg bg3"></div>
     <header>
         <div class="container nav__container">
-            <!-- <div class="logo">
-        <a href="#">انتقال از دانشجویی به حرفه شغلی</a>
-      </div> -->
+
             <nav>
                 <ul>
-                    <li><a href="#">مقاله آموزشی</a></li>
-                    <li><a href="#">اسلاید های آموزشی</a></li>
-                    <li><a href="#">نمونه سوالات</a></li>
+                    <li> <a href="#articles" id="scroll-link">مقاله آموزشی</a></li>
+
+                    <li><a href="#slides" id="scroll-link2">اسلاید های آموزشی</a></li>
+                    <li><a href="#questions" id="scroll-link4"> سوالات </a></li>
+
+                    <li><a href="#biography" id="scroll-link3"> مشخصات برنامه نویس</a></li>
                     <li class="logo"><img src="./sources/img/IUMS.svg.png" alt=""></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <script>
+
+    </script>
+
 
     <main>
+        <button id="go-up-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }) "><i
+                class="fa fa-arrow-up"></i></button>
 
-        <section class="content first__box" data-aos="fade-up">
+
+
+
+        <!-- <section class="content first__box" data-aos="fade-up">
             <div class="container ">
                 <div class="content__text">
                     <h4>
@@ -42,8 +54,29 @@
                     <img src="./sources/img/nurse-vector.png" alt="Vector 1">
                 </div>
             </div>
+      
+        </section> -->
+
+
+
+
+
+        <section class="content  section__contents"  data-aos="fade-up">
+            <div class="container boxes">
+                <div data-aos="fade-up-left" class="content__text" data-aos="zoom-out-left">
+                    <div class="content__text">
+                        <h4>
+                            انتقال از دانشجویی به مقطع حرفه ای پرستاری
+                        </h4>
+                    </div>
+
+                </div>
+                <div class="__images nurse" data-aos="zoom-out-right">
+                    <img src="./sources/img/nurse-vector.png" alt="Vector 1">
+                </div>
+            </div>
         </section>
-        <section class="content" data-aos="fade-up">
+        <section class="content  section__contents" id="articles" data-aos="fade-up">
             <div class="container boxes">
                 <div data-aos="fade-up-left" class="content__text" data-aos="zoom-out-left">
                     <a href="#" class="btn">مقاله آموزشی</a>
@@ -53,45 +86,87 @@
                 </div>
             </div>
         </section>
-        <section class="content" data-aos="fade-up">
-            <div class="container">
-                <div class="content__text" data-aos="zoom-out-left">
-                    <a href="#" class="btn"> اسلایدهای آموزشی</a>
+        <section class="content section__contents" id="slides" data-aos="fade-up">
+            <div class="container boxes">
+                <div data-aos="fade-up-left" class="content__text" data-aos="zoom-out-left">
+                    <a href="https://docs.google.com/presentation/d/18lG7OhIIkGnw2IhzgDvwHkCRRNlaNYkH/edit?usp=share_link&ouid=113266129401067493351&rtpof=true&sd=true"
+                        class="btn">اسلاید های آموزشی </a>
                 </div>
-                <div class="content__images" data-aos="zoom-out-right">
+                <div class="__images" data-aos="zoom-out-right">
                     <img src="./sources/img/slides.png" alt="Vector 1">
                 </div>
             </div>
         </section>
-        <section class="content" data-aos="fade-up">
-            <div class="container">
-                <div class="content__text" data-aos="zoom-out-left">
-                    <a href="#" class="btn">نمونه سوالات</a>
+        <section class="content section__contents" id="questions" data-aos="fade-up">
+            <div class="container boxes">
+                <div data-aos="fade-up-left" class="content__text" data-aos="zoom-out-left">
+                    <a href="https://survey.porsline.ir/s/bNpcXPdn" class="btn"> نمونه سوالات </a>
                 </div>
-                <div class="content__images" data-aos="zoom-out-right">
-                    <img src="vector2.png" alt="Vector 2">
+                <div class="__images programmer" data-aos="zoom-out-right">
+                    <img src="./sources/img/question.png"  style="width: 40rem;height: 30rem;"  alt="Vector 1">
                 </div>
             </div>
         </section>
+        <section class="content section__contents" id="biography" data-aos="fade-up">
+            <div class="container boxes">
+                <div data-aos="fade-up-left" class="content__text" data-aos="zoom-out-left">
+                    <a href="https://miladarabmohammadi.pages.dev/" class="btn">مشخصات برنامه نویس گروه </a>
+                </div>
+                <div class="__images programmer" data-aos="zoom-out-right">
+                    <img src="./sources/img/me-vector-2.png" style="width: 40rem;height: 40rem;" alt="Vector 1">
+                </div>
+            </div>
+        </section>
+        <section class=" ourgroup">
+            <h1 class="ourgroup__header">اعضای گروه</h1>
+
+            <div class="container">
+
+
+                <div class="ourgroup__div">
+                    <ul class="ourgroup__ul">
+
+                        <li class="ourgroup__list"> میلاد عرب محمدی</li>
+                        <li class="ourgroup__list"> امیرعلی نوذری</li>
+                        <li class="ourgroup__list">کیمیا صفری</li>
+                        <li class="ourgroup__list">فاطمه طالبی</li>
+                        <li class="ourgroup__list">مریم یاری</li>
+                        <li class="ourgroup__list">معصومه نقی پور</li>
+                    </ul>
+                </div>
+                <div class="ourgroup__img " style="height: 100%;">
+                    <img src="./sources/img/group.png" style="width: 50rem;height: 50rem;" alt="">
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer__group">
-                <p>افراد گروه:</p>
-                <p>امیرعلی نوذری</p>
-                <p> کیمیا صفری</p>
-                <p> فاطمه طالبی</p>
-                <p> معصومه نقی پور</p>
-                <p> مریم یاری</p>
-                <p> میلاد عرب محمدی</p>
-            </div>
+        <div class="footer__container">
+            <ul>
+                <li class="footer__list">
+                    Email: <span id="copy-text">mohammadimilad144@gmail.com</span>
+
+                </li>
+                <li class="footer__list">
+                    website: <a id="copy-text"
+                        href="https://miladarabmohammadi.pages.dev/">miladarabmohammadi.pages.dev</a>
+                </li>
+
+
+
+            </ul>
         </div>
     </footer>
+    <script src="./javascript/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+
 </body>
 
 </html>
